@@ -1,0 +1,453 @@
+/* Basic Setup */
+/*
+@font-face {
+    font-family: freeScript;
+    src: url(FREESCPT.ttf);
+*/
+}
+* {
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+/* background */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(brickwall.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    background-attachment: fixed;
+}
+
+.section-heading {
+    text-align: center;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+
+
+/* Navigation */
+
+nav .cs-logo {
+    height: 2.5rem;
+    padding-left: 2%;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 1rem;
+    font-family: 'Kalam', cursive;
+    font-size: 120%;
+}
+
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+
+/* NCI Codeschool SVG */
+
+
+svg {
+    display: block;
+    margin: 2em auto 0;
+    width: 60%;
+}
+
+.svg-text-box {
+    position: absolute;
+    width: 120%;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    stroke: #E8E8E8;
+    stroke-width: 2;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;  
+/*    animation: offset 5s linear forwards;    */
+}
+
+
+.one {
+    animation: offset 0.8s linear forwards;
+}
+
+.two {
+    animation: offset 0.8s .9s linear forwards;
+}
+
+.three {
+    animation: offset 0.8s 1.5s linear forwards;
+}
+
+.four {
+    animation: offset 0.8s 2s linear forwards;
+}
+
+.five {
+    animation: offset 0.8s 2.6s linear forwards;
+}
+
+.six {
+    animation: offset 0.8s 2.9s linear forwards;
+}
+
+.seven {
+    animation: offset 0.8s 3.4s linear forwards;
+}
+
+.eight {
+    animation: offset 0.8s 4s linear forwards;
+}
+
+.nine {
+    animation: offset 0.8s 4.6s linear forwards;
+}
+
+.ten {
+    animation: offset 0.8s 5.2s linear forwards;
+}
+
+.eleven {
+    animation: offset 0.8s 5.8s linear forwards;
+}
+.twelve {
+    animation: offset 0.8s 6.4s linear forwards;
+}
+.thirteen {
+    animation: offset 0.8s 7s linear forwards;
+}
+
+
+
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+/* BLACKBOARD BACKGROUND */
+
+
+.header {
+    height: 30vh;
+    padding: 20px 15px;
+    border: #B78240 solid 10px;
+}
+
+.footer {
+    color: #e8e8e8;
+    text-align: right;
+    font-family: 'Kalam', cursive;
+    padding-top: 1%;
+    border: #B78240 solid 5px;
+}
+
+.header,
+.footer{
+  width: 100%;
+  background-color: #497959;
+  
+  box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  
+  background-image: url(blackboard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/*********** ABOUT SECTION **************** */
+.about-section {
+    background-color: #e8e8e8;
+/*    font-family: "Lato", arial;*/
+    padding-top: 5%;
+    padding-bottom: 7%;
+    color: #666;
+    font-family: 'Kalam', cursive;
+}
+
+.devices-photo {
+    max-width: 100%;
+}
+
+.long-copy {
+    line-height: 145%;
+/*
+    width: 70%;
+    margin-left: 15%;
+*/
+    font-weight: 300;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+
+/*********** COURSES SECTION *************** */
+
+.courses-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(brickwall.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 6% 0;
+}
+
+.blackboard-small {
+    background-image: url(blackboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 8rem;
+    margin-bottom: 12%;
+    color: #e8e8e8;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.blackboard-small-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: transform .6s  ease-out; 
+    transform: translateX(-100%);
+}
+
+.slide .blackboard-small-overlay {
+    opacity: 1;
+    background-image: url(blackboard.jpg);
+}
+
+
+.blackboard-small:hover .blackboard-small-overlay {
+    transform: translateX(0);
+}
+
+.blackboard-small:hover .slide {
+    transform: translateX(100%); 
+}
+
+
+.blackboard-small-writing {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 8rem;
+    font-size: 3rem;
+    font-family: 'Kalam', cursive;
+}
+
+.blackboard-small-writing-transition {
+    font-size: 1rem;
+    font-family: 'Kalam', cursive;
+    padding-top: 5%;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+a,
+a:hover {
+    color: #e8e8e8;
+}
+
+/* **************** REVIEWS ************ */
+
+.reviews-section {
+    background-color: #e8e8e8;
+    font-family: 'Kalam', cursive;
+    color: #666;
+    padding: 5% 0;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    font-size: 120%;
+    line-height: 145%;
+    position: relative;
+    margin-top: 10%;
+}
+
+cite {
+    margin-top: 3%;
+    display: block;
+}
+
+blockquote:before {
+    content:"\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite img {
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 2%;
+    vertical-align: middle;
+}
+
+/* **************** SIGN UP PAGE *********** */
+.header-signup {
+    width: 100%;
+    border-bottom: #B78240 solid 6px;
+    background-color: #497959;
+    background-image: url(blackboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: .8rem 0;
+}
+
+/* ********** ROTATING CUBE SECTION ******** */
+
+.cube-section {
+    background-color: #e8e8e8;
+    height: 600px;
+}
+
+
+/* **************** MEDIA QUERIES ********** */
+
+@media only screen and (min-width: 480px){
+    header {
+        height: 80 vh;
+    }
+    
+    .header {
+        height: 60 vh;
+    }
+    
+    .svg-text-box {
+        top: 120%;
+    }
+    * {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 528px){
+    header {
+        height: 70vh;
+    }
+    
+    .header {
+        height: 50vh;
+    }
+    
+    .svg-text-box {
+        top: 180%;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 700px){
+    header {
+        height: 80vh;
+    }
+    
+    .header {
+        height: 60vh;
+    }
+    
+    .svg-text-box {
+        top: 100%;
+    }
+    
+    * {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 950px){
+    header {
+        height: 80vh;
+    }
+    
+    .header {
+        height: 60vh;
+    }
+    
+    .svg-text-box {
+        top: 130%;
+    }
+    
+    * {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1050px){
+    header {
+        height: 80vh;
+    }
+    
+    .header {
+        height: 60vh;
+    }
+    
+    .svg-text-box {
+        top: 120%;
+        width: 100%;
+    }
+    
+    .main-nav li {
+    
+    margin-left: 20px;
+}
+}
