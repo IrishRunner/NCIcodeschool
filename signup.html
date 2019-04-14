@@ -22,13 +22,41 @@
         </div>
     </section>
     <section class="cube-section">
-        <div class="container">
-            <img src="images/logoCube.png">
-            <img src="images/html5Square100px.png">
-            <img src="images/cssSquare100px.png">
-            <img src="images/JSSquare100px.png">
-        </div>
-    </section>
+       
+        <div class="container form">
+          <h2 class="register">Register Now for NCI Codeschool!</h1>
+           <div class="form-container">
+            <form action="action_page.php" >
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" required>
+                <label for="email">Email</label>
+                <input type="email" id="text" name="email" placeholder="abc@gmail.com" required>
+                <label for="course">Course</label>
+                <select id="course" name="course">
+                  <option value="html">HTML</option>
+                  <option value="css">CSS</option>
+                  <option value="js">JavaScript</option>
+                  <option value="php">PHP</option>
+                  <option value="python">Python</option>
+                  <option value="ruby">Ruby</option>
+                  <option value="mysql">MySql</option>
+                  <option value="wordpress">Wordpress</option>
+                </select>
+                <div class="submit-btn">
+                    <input type="submit" value="Submit" class="submit">
+                </div>
+                
+              </form>
+             </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <p>NCI Codeschool &copy; 2019</p>
+            </div>
+        </section>
     
 </body>
 </html>

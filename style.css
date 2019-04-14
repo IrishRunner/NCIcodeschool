@@ -204,6 +204,7 @@ svg {
   position: relative;
 }
 
+
 /*********** ABOUT SECTION **************** */
 .about-section {
     background-color: #e8e8e8;
@@ -233,6 +234,12 @@ svg {
 
 /*********** COURSES SECTION *************** */
 
+.liam {
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .courses-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(brickwall.jpg);
     background-size: cover;
@@ -242,9 +249,7 @@ svg {
 }
 
 .blackboard-small {
-    background-image: url(blackboard.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #fff;
     position: relative;
     height: 8rem;
     margin-bottom: 12%;
@@ -342,6 +347,8 @@ cite img {
 }
 
 /* **************** SIGN UP PAGE *********** */
+
+
 .header-signup {
     width: 100%;
     border-bottom: #B78240 solid 6px;
@@ -353,11 +360,64 @@ cite img {
     padding: .8rem 0;
 }
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 0.8rem; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: .8rem; /* Add a top margin */
+  margin-bottom: 1rem; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 1.2rem;
+/*  min-height: 80vh;*/
+}
+
+.form {
+    padding-bottom: 5rem;
+}
+
+.register {
+    color: #666;
+    padding-top: 4rem;
+     
+}
+
+.submit-btn {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.submit {
+    width: 40%;
+}
+
 /* ********** ROTATING CUBE SECTION ******** */
 
 .cube-section {
     background-color: #e8e8e8;
-    height: 600px;
 }
 
 
